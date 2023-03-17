@@ -1,0 +1,19 @@
+label {
+	display: block;
+}
+
+button {
+	margin-top: 10px;
+	display: block;
+}
+
+#content {
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	box-shadow: 5px 5px gray;
+	border: 1px solid black;
+	border-radius: 5px;
+}
