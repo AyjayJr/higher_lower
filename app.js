@@ -2,6 +2,7 @@
 const button = document.getElementById('guessBtn');
 let userGuess = document.getElementById('userGuess');
 let response = document.getElementById('response');
+let description = document.getElementById('range');
 let guesses = [];
 let max = 0;
 
@@ -13,6 +14,7 @@ while (max < 1 || isNaN(max))
 
 // round number if user input was a decimal
 max = Math.round(max);
+description.innerText = 'Guess a number between 1 and ' + max;
 
 // pick a random number between 1 and the user provided max
 const number = Math.floor(Math.random() * (max - 1 + 1)) + 1;
